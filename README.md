@@ -12,7 +12,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - RAM: Patriot Viper Steel DDR4 32GB (2 x 16GB) 3200MHz
 - Motherboard: ASUS ROG STRIX Z390-I GAMING
 - Audio codec: ALCS1220A (onboard)
-- Ethernet: Intel® I219V (onboard)
+- Ethernet: Intel I219V (onboard)
 - WiFi/BT: BCM94360NG NGFF M.2 2230 WiFi Card (replaced onboard card)
 - M.2 Drive: ADATA XPG SX8200 Pro 2TB
 - HDD: Western Digital Black 4TB
