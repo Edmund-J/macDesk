@@ -97,7 +97,7 @@ Selected XHC ports:
 - WiFi & Bluetooth
 - Audio: All the connectors are correctly identified and work as expected
 - Messages
-- Facetime (audio only. Don't have a web cam)
+- Facetime (audio only, don't have a web cam)
 - Continuity: 
 	- AirDrop
 	- Continuity Camera
