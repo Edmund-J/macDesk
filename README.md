@@ -1,5 +1,5 @@
 # macDesk
-SFF Hackintosh OpenCore Big Sur, used as my main workstation.
+OpenCore Big Sur SFF Hackintosh, used as my main workstation. Assembled one year ago (Oct/2020). A work in progress...
 
 Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#getting-started-with-opencore
 
@@ -34,6 +34,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - ProperTree: https://github.com/corpnewt/ProperTree
 - USBMap: https://github.com/corpnewt/USBMap
 - GenSMBIOS: https://github.com/corpnewt/GenSMBIOS
+- OCConfigCompare: https://github.com/corpnewt/OCConfigCompare
 - Hackintool: https://github.com/headkaze/Hackintool
 - VGTab: https://www.tonymacx86.com/threads/tool-vgtab-control-your-vega-in-macos-without-flashing-the-vbios.268965/
 - VGTabMerge: https://github.com/corpnewt/VGTabMerge
