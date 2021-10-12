@@ -38,7 +38,17 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - Hackintool: https://github.com/headkaze/Hackintool
 - VGTab: https://www.tonymacx86.com/threads/tool-vgtab-control-your-vega-in-macos-without-flashing-the-vbios.268965/
 - VGTabMerge: https://github.com/corpnewt/VGTabMerge
-- LIQUIDCTL: https://github.com/liquidctl/liquidctl
+- liquidctl: https://github.com/liquidctl/liquidctl
+
+## ACPI
+
+### Generic
+
+- SSDT-AWAC.aml
+- SSDT-EC-USBX.aml
+- SSDT-PLUG.aml
+- SSDT-PMC.aml
+- SSDT-SBUS-MCHC.aml
 
 ## Kexts
 
@@ -56,16 +66,6 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 ### System specific
 
 - USBPorts.kext
-
-## ACPI
-
-### Generic
-
-- SSDT-AWAC.aml
-- SSDT-EC-USBX.aml
-- SSDT-PLUG.aml
-- SSDT-PMC.aml
-- SSDT-SBUS-MCHC.aml
 
 ### USB Port Mapping
 
@@ -106,6 +106,7 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your card paramet
 - Ethernet
 - WiFi & Bluetooth
 - Audio: All the connectors are correctly identified and work as expected
+- Graphics acceleration
 - Messages
 - Facetime (audio only, don't have a web cam)
 - Continuity: 
