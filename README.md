@@ -92,7 +92,7 @@ Selected XHC ports:
 | SS09 | 0x19 | 3: USB3       | Front USB 3.1 Gen 1 (Blue) |
 
 ### About VGTab
-This nice little tool creates a "SoftPowerPlayTable" that sets your card parameters to your preference (fan, power, clock speed, memory speed). It writes a VGTab.kext in your desktop and once created, you use VGTabMerge to copy those parameters to your config.plist. The merge tool was made with CLOVER in mind, so, the resulting config.plist has to be modified for Opencore. This is done moving the "Devices->Properties->PciRoot(...)" created by VGTab (Clover syntax) to "Device->Properties->Add->PciRoot(...)" (opencore syntax). The "Devices" subtree remaining can be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
+This nice little tool creates a "SoftPowerPlayTable" that sets your card parameters to your preference (fan, power, clock speed, memory speed). It writes a VGTab.kext in your desktop and once created, you use VGTabMerge to copy those parameters to your config.plist. The merge tool was made with CLOVER in mind, so, the resulting config.plist has to be modified for Opencore. This is done moving the "Devices->Properties->PciRoot(...)" created by VGTabMerge (Clover syntax) to "Device->Properties->Add->PciRoot(...)" (opencore syntax). The "Devices" subtree remaining can be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
 
 **From here:**
 
