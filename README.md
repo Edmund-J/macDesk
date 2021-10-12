@@ -22,7 +22,6 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - Chassis: Sliger SM570
 - PSU: Silverstone SX700-PT SFX 700W Platinum 80+
 
-
 ## Software
 
 - BIOS: 3004
@@ -30,6 +29,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - Boot loader: Opencore 0.7.3
 
 ### Tools
+
 - MountEFI: https://github.com/corpnewt/MountEFI
 - ProperTree: https://github.com/corpnewt/ProperTree
 - USBMap: https://github.com/corpnewt/USBMap
@@ -39,7 +39,6 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - VGTab: https://www.tonymacx86.com/threads/tool-vgtab-control-your-vega-in-macos-without-flashing-the-vbios.268965/
 - VGTabMerge: https://github.com/corpnewt/VGTabMerge
 - LIQUIDCTL: https://github.com/liquidctl/liquidctl
-
 
 ## Kexts
 
@@ -57,7 +56,6 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 ### System specific
 
 - USBPorts.kext
-
 
 ## ACPI
 
@@ -92,7 +90,8 @@ Selected XHC ports:
 | SS09 | 0x19 | 3: USB3       | Front USB 3.1 Gen 1 (Blue) |
 
 ### About VGTab
-This nice little tool creates a "SoftPowerPlayTable" that sets your card parameters to your preference (fan, power, clock speed, memory speed). I use it to undervolt and overclock my Vega 56 card. It writes a VGTab.kext in your desktop and once created, you use VGTabMerge to copy those parameters to your config.plist. The merge tool, which was made with CLOVER in mind, will merge the parameters to the wrong subtree in the config. You have to move the "Devices->Properties->PciRoot(...)" child to "Device->Properties->Add" (which is the correct subtree for Opencore). The remaining "Devices" subtree can be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
+
+This nice little tool creates a "SoftPowerPlayTable" that sets your card parameters to your preference (fan, power, clock speed, memory speed). I use it to undervolt and overclock my Vega 56 card. It writes a VGTab.kext in your desktop and once created, you use VGTabMerge to copy those parameters to your config.plist. The merge tool, which was made with CLOVER in mind, will inject the parameters to the wrong subtree in the config. To correct this you have to move the "Devices->Properties->PciRoot(...)" child to "Device->Properties->Add" (which is the correct subtree for Opencore). The remaining "Devices" subtree can then be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
 
 **From here:**
 
@@ -102,9 +101,9 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your card paramet
 
 ![Screen shot 2](Pics/image2.png)
 
-
 ## Working
 
+- Ethernet
 - WiFi & Bluetooth
 - Audio: All the connectors are correctly identified and work as expected
 - Messages
@@ -124,10 +123,11 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your card paramet
 		- Auto Unlock (don't have an Apple Watch)
 		- Sidecar (my iPad is too old)
 
-
 ## To do
+
 - Sleep: Wakes inmediately after sleep. This happens when the usb port in which the liquid cooler is connected is mapped in USBPorts.kext. If I remove the port mapping then sleep/wake works as expected. This is a problem because I use "liquidctl" to configure the fan speed curve and I need the port active. The machine does the ocassional bittorrent, so I can live with it being always awake. Any other solution will be considered.
 
 ## Acknowledgment
+
 A big thank you to those who spend time coding, documenting or testing these tools. Their effort is really appreciated...
 
