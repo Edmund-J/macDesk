@@ -91,7 +91,7 @@ Selected XHC ports:
 
 ### About VGTab
 
-This nice little tool creates a "SoftPowerPlayTable" that sets your card parameters to your preference (fan, power, clock speed, memory speed). I use it to undervolt and overclock my Vega 56 card. It writes a VGTab.kext in your desktop and once created, you use VGTabMerge to copy those parameters to your config.plist. The merge tool, which was made with CLOVER in mind, will inject the parameters to the wrong subtree. To correct this you have to move the "Devices->Properties->PciRoot(...)" child to "Device->Properties->Add" (which is the correct subtree for Opencore). The remaining "Devices" subtree can then be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
+This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video card parameters to your preference (fan, power, clock speed, memory speed). I use it to undervolt and overclock my Vega 56 card. It generates a VGTab.kext in your desktop which is used by VGTabMerge to copy those parameters to your config.plist. The merge tool, which was made with CLOVER in mind, will inject the parameters to the subtree relevant to Clover. You must then move them to the appropriate subtree for Opencore. You have to move the "Devices->Properties->PciRoot(...)" child to "Device->Properties->Add". The remaining "Devices" subtree can then be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
 
 **From here:**
 
