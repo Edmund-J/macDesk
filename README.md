@@ -5,6 +5,8 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 ![About macDesk](Pics/macDesk.png)
 
+***
+
 ## Hardware
 
 - CPU: Intel I9 9900K
@@ -21,6 +23,8 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - Case fan: Noctua NF-S12A PWM Chromax Black
 - Chassis: Sliger SM570
 - PSU: Silverstone SX700-PT SFX 700W Platinum 80+
+
+***
 
 ## Software
 
@@ -40,6 +44,8 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - VGTabMerge: https://github.com/corpnewt/VGTabMerge
 - liquidctl: https://github.com/liquidctl/liquidctl
 
+***
+
 ## ACPI
 
 ### Generic
@@ -49,6 +55,8 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - SSDT-PLUG.aml
 - SSDT-PMC.aml
 - SSDT-SBUS-MCHC.aml
+
+***
 
 ## Kexts
 
@@ -101,6 +109,8 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video c
 
 ![Screen shot 2](Pics/image2.png)
 
+***
+
 ## Working
 
 - Ethernet
@@ -124,9 +134,13 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video c
 		- Auto Unlock (don't have an Apple Watch)
 		- Sidecar (my iPad is too old)
 
+***
+
 ## To do
 
 - Sleep: Wakes inmediately after sleep. This happens when the usb port in which the liquid cooler is connected is mapped in USBPorts.kext. If I remove the port mapping then sleep/wake works as expected. This is a problem because I use "liquidctl" to configure the fan speed curve and I need the port active. The machine does the ocassional bittorrent, so I can live with it being always awake. Any other solution will be considered.
+
+***
 
 ## Acknowledgment
 
