@@ -103,11 +103,11 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video c
 
 **From here:**
 
-![Screen shot 1](Pics/image1.png)
+>![Screen shot 1](Pics/image1.png "This is in Clover syntax")
 
 **To here:**
 
-![Screen shot 2](Pics/image2.png)
+>![Screen shot 2](Pics/image2.png "This is in Opencore syntax")
 
 ***
 
