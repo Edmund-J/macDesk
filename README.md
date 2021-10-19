@@ -30,7 +30,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 - BIOS: 3004
 - Operating system: macOS Bug Sur 11.6
-- Boot loader: Opencore 0.7.3
+- Boot loader: Opencore 0.7.4
 
 ### Tools
 
