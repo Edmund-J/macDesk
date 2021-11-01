@@ -1,5 +1,5 @@
 # macDesk
-OpenCore Big Sur SFF Hackintosh, used as my main workstation. Assembled one year ago (Oct/2020). A work in progress...
+SFF Hackintosh, used as my workstation at home. Assembled one year ago (Oct/2020). A work in progress...
 
 Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#getting-started-with-opencore
 
@@ -29,8 +29,8 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 ## Software
 
 - BIOS: 3004
-- Operating system: macOS Bug Sur 11.6
 - Boot loader: Opencore 0.7.4
+- Operating system: macOS Bug Sur 11.6
 
 ### Tools
 
@@ -79,23 +79,23 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 Selected XHC ports:
 
-| **Name** | **Port** | **Connector**     | **Comment** |
-| :--- | :--- | :--- | :--- |
-| HS05 | 0x05 | 0: USB2       | Back - Left - #1 (black) - USB2 only |
-| HS06 | 0x06 | 0: USB2       | Back - Left - #2 (black) - USB2 only |
-| HS07 | 0x07 | 3: USB3       | Back - Left - #3 (blue) - USB2 personality |
-| HS08 | 0x08 | 3: USB3       | Back - Left - #4 (blue) - USB2 personality |
-| HS09 | 0x09 | 3: USB3       | Mainboard (Front) - USB2 personality |
-| HS11 | 0x0B | 0: USB2       | Motherboard (H100i) |
-| HS13 | 0x0D | 0: USB2       | Motherboard (Aura) |
+| **Name** | **Port** | **Connector** | **Comment** |
+| :---: | :---: | :--- | :--- |
+| HS05 | 0x05 | 0: USB2 | Back - Left - #1 (black) - USB2 only |
+| HS06 | 0x06 | 0: USB2 | Back - Left - #2 (black) - USB2 only |
+| HS07 | 0x07 | 3: USB3 | Back - Left - #3 (blue) - USB2 personality |
+| HS08 | 0x08 | 3: USB3 | Back - Left - #4 (blue) - USB2 personality |
+| HS09 | 0x09 | 3: USB3 | Mainboard (Front) - USB2 personality |
+| HS11 | 0x0B | 0: USB2 | Motherboard (H100i) |
+| HS13 | 0x0D | 0: USB2 | Motherboard (Aura) |
 | HS14 | 0x0E | 255: Internal | Bluetooth |
-| SS01 | 0x11 | 9: TypeC+Sw   | Front USB Type-C |
-| SS02 | 0x12 | 9: TypeC+Sw   | Back USB Type-C |
-| SS03 | 0x13 | 3: USB3       | Rear USB 3.1 Gen 2 Type-A (Red) |
-| SS04 | 0x14 | 3: USB3       | Rear USB 3.1 Gen 2 Type-A (Red) |
-| SS07 | 0x17 | 3: USB3       | Rear USB 3.1 Gen 1 (Blue) |
-| SS08 | 0x18 | 3: USB3       | Rear USB 3.1 Gen 1 (Blue) |
-| SS09 | 0x19 | 3: USB3       | Front USB 3.1 Gen 1 (Blue) |
+| SS01 | 0x11 | 9: TypeC+Sw | Front USB Type-C |
+| SS02 | 0x12 | 9: TypeC+Sw | Back USB Type-C |
+| SS03 | 0x13 | 3: USB3 | Rear USB 3.1 Gen 2 Type-A (Red) |
+| SS04 | 0x14 | 3: USB3 | Rear USB 3.1 Gen 2 Type-A (Red) |
+| SS07 | 0x17 | 3: USB3 | Rear USB 3.1 Gen 1 (Blue) |
+| SS08 | 0x18 | 3: USB3 | Rear USB 3.1 Gen 1 (Blue) |
+| SS09 | 0x19 | 3: USB3 | Front USB 3.1 Gen 1 (Blue) |
 
 ### About VGTab
 
