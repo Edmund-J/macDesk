@@ -1260,6 +1260,8 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
@@ -1278,6 +1280,8 @@
 				<integer>4096</integer>
 				<key>Type</key>
 				<string>RuntimeCode</string>
+				<key>ResizeAppleGpuBars</key>
+				<integer>-1</integer>
 			</dict>
 		</array>
 	</dict>
