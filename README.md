@@ -130,7 +130,7 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video c
 	- Text Message Forwarding
 	- Universal Clipboard
 	- Untested but should work just fine:
-		- Apple Pay (don't have a supported card)
+		- Apple Pay (N/A)
 		- Auto Unlock (don't have an Apple Watch)
 		- Sidecar (my iPad is too old)
 
