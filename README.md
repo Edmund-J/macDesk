@@ -10,7 +10,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 ## Hardware
 
 - CPU: Intel I9 9900K
-- GPU: SAPPHIRE PULSE RX VEGA 56
+- GPU: Sapphire Pulse Radeon RX Vega 56
 - RAM: Patriot Viper Steel DDR4 32GB (2 x 16GB) 3200MHz
 - Motherboard: ASUS ROG STRIX Z390-I GAMING
 - Audio codec: ALCS1220A (onboard)
