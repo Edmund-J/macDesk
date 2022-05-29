@@ -1,5 +1,5 @@
 # macDesk
-SFF Hackintosh, used as my workstation at home. Assembled one year ago (Oct/2020). A work in progress...
+SFF Hackintosh, used as my workstation at home. Assembled in Oct/2020. A work in progress...
 
 Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#getting-started-with-opencore
 
@@ -9,7 +9,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 ## Hardware
 
-- CPU: Intel I9 9900K
+- CPU: Intel I9-9900K
 - GPU: Sapphire Pulse Radeon RX Vega 56
 - RAM: Patriot Viper Steel DDR4 32GB (2 x 16GB) 3200MHz
 - Motherboard: ASUS ROG STRIX Z390-I GAMING
@@ -19,18 +19,18 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - M.2 Drive: ADATA XPG SX8200 Pro 2TB
 - HDD: Western Digital Black 4TB
 - SSD: Intel SSD 480GB + Samsung 840 Pro 512GB (RAID1 1TB)
-- CPU Cooler: Corsair iCUE H100i RGB PRO XT (replaced fans with 2 X Noctua NF-F12 PWM Chromax Black)
+- CPU Cooler: Corsair iCUE H100i RGB PRO XT (replaced fans with 2 X Noctua NF-F12 PWM Chromax Black, much quieter now)
 - Case fan: Noctua NF-S12A PWM Chromax Black
 - Chassis: Sliger SM570
-- PSU: Silverstone SX700-PT SFX 700W Platinum 80+
+- PSU: Corsair SF750, 750 Watt Platinum 80+
 
 ***
 
 ## Software
 
 - BIOS: 3004
-- Boot loader: Opencore 0.7.5
-- Operating system: macOS Bug Sur 11.6
+- Boot loader: Opencore 0.8.0
+- Operating system: macOS Monterey 12.4
 
 ### Tools
 
@@ -46,21 +46,27 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 ***
 
-## ACPI
+## Drivers
 
-### Generic
+- AudioDxe.efi
+- HfsPlus.efi
+- OpenCanopy.efi
+- OpenRuntime.efi
+
+***
+
+## ACPI
 
 - SSDT-AWAC.aml
 - SSDT-EC-USBX.aml
 - SSDT-PLUG.aml
 - SSDT-PMC.aml
 - SSDT-SBUS-MCHC.aml
+- SSDT-UIAC.aml
 
 ***
 
 ## Kexts
-
-### Generic
 
 - Lilu.kext
 - VirtualSMC.kext
