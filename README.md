@@ -1,5 +1,5 @@
 # macDesk
-SFF Hackintosh, used as my workstation at home. Assembled in Oct/2020. A work in progress...
+SFF Hackintosh, used as my main workstation at home. Assembled in Oct/2020. Always evolving.... A work in progress...
 
 Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#getting-started-with-opencore
 
@@ -29,7 +29,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 ## Software
 
 - BIOS: 3004
-- Boot loader: Opencore 0.8.0
+- Boot loader: Opencore 0.8.1
 - Operating system: macOS Monterey 12.4
 
 ### Tools
