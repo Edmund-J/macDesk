@@ -160,18 +160,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>CwAAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AwCRPg==</data>
-				<key>model</key>
-				<string>Intel UHD Graphics 630 (connector-less)</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>PP_DisableClockStretcher</key>
@@ -187,11 +175,23 @@
 				<key>PP_GfxOffControl</key>
 				<integer>0</integer>
 				<key>PP_PhmSoftPowerPlayTable</key>
-				<data>pwIIAQBcAO8GAAAOLAAAGwBIAAAAgKkDAPBJAgAyAAgAAAAAAAAAAAAAAAAAAAIBXABAAjcClACPAbQAHgF6AIwArQEAAAAAYwIAAJAAmQJeATQBiAFoNgIAcQICAgAAAAAAAAgAAAAAAAAABQAHAAMABQAAAAAAAAABCCADhAO2A+gDGgRMBH4ELgQBAegDAQGEAwAGYOoAAABAGQEAAdxKAQACAHcBAAOQkQEABWywAQAHAQjQTAEAAACAAAAAAAAAHIMBAAEAAAAAAAAAAIi8AQACAAAAAAAAAAC07wEAAwAAAAAAAAAAgAACAAQAAAAAAAAAAMg/AgAFAAAAAAEAAADIWAIABgAAAAABAAAAOIkCAAcAAAAAAQAAAAAEYOoAAABAGQEAANxKAQAAkF8BAAAACChuAAAALMkAAAH4CwEAAoA4AQADkF8BAAT0kQEABdCwAQAGwNQBAAcACGw5AAAAJF4AAAH8hQAAAqy8AAADNNAAAARobgEABQiXAQAG7KMBAAcAAWg8AQAAAQQ8QQAAAAAAUMMAAAAAAHARAQABAABgZwEAAgAAAQgAmIUAAEC1AABg6gAAUMMAAAGAuwAAYOoAAJQLAQBQwwAAAnj/AABAGQEAtCcBAFDDAAADtCcBANxKAQDcSgEAUMMAAASAOAEAkF8BANxKAQBQwwAABdxKAQAAdwEAkF8BAFDDAAAGAHcBAAB3AQCQXwEAUMMAAAcAdwEAkJEBAAB3AQBQwwAAARgAAAAAAAAAC+QSYAlgCUsACgBUA5ABkAGQAZABkAGQAZABAAAAAAACBDEHpQClAKUALAEAAFkAaQBKAEoAXwBzAHMAZABAAJCSl2CWAJBVAAAAAAAAAAAAAAAAAAAAAAACAtQwAAACEGDqAAACEA==</data>
+				<data>pwIIAQBcAO8GAAAOLAAAGwBIAAAAgKkDAPBJAgAwAAgAAAAAAAAAAAAAAAAAAAIBXABAAjcClACPAbQAHgF6AIwArQEAAAAAYwIAAJAAmQJeATQBiAFoNgIAcQICAgAAAAAAAAgAAAAAAAAABQAHAAMABQAAAAAAAAABCCADhAO2A+gDGgRMBC4EOAQBAeIEAQGEAwAGYOoAAABAGQEAAdxKAQACAHcBAAOQkQEABWywAQAHAQjQTAEAAACAAAAAAAAAHIMBAAEAAAAAAAAAAIi8AQACAAAAAAAAAAC07wEAAwAAAAAAAAAAgAACAAQAAAAAAAAAAMg/AgAFAAAAAAEAAABkWAIABgAAAAABAAAA2JgCAAcAAAAAAQAAAAAEYOoAAABAGQEAANxKAQAAkF8BAAAACChuAAAALMkAAAH4CwEAAoA4AQADkF8BAAT0kQEABdCwAQAGwNQBAAcACGw5AAAAJF4AAAH8hQAAAqy8AAADNNAAAARobgEABQiXAQAG7KMBAAcAAWg8AQAAAQQ8QQAAAAAAUMMAAAAAAPgkAQABAACQXwEAAgAAAQgAmIUAAEC1AABg6gAAUMMAAAGAuwAAYOoAAJQLAQBQwwAAAnj/AABAGQEAtCcBAFDDAAADtCcBANxKAQDcSgEAUMMAAASAOAEAkF8BANxKAQBQwwAABdxKAQAAdwEAkF8BAFDDAAAGAHcBAAB3AQCQXwEAUMMAAAcAdwEAkJEBAAB3AQBQwwAAARgAAAAAAAAAC+QSsAT8CEsACgBUA5ABkAGQAZABkAGQAZABAAAAAAACBDEHpQClAKUALAEAAFkAaQBKAEoAXwBzAHMAZABAAJCSl2CWAJBVAAAAAAAAAAAAAAAAAAAAAAACAtQwAAACEGDqAAACEA==</data>
 				<key>PP_PhmUseDummyBackEnd</key>
 				<integer>0</integer>
 				<key>PP_ToolsLogSpaceSize</key>
 				<integer>524288</integer>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>CwAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwCRPg==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 (connector-less)</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -625,8 +625,6 @@
 				<string>ForceDisplayRotationInEFI</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -776,6 +774,8 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>AudioDxe.efi</string>
 			</dict>
@@ -786,6 +786,8 @@
 				<string>HFS+ Driver</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
 			</dict>
@@ -796,6 +798,8 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
 			</dict>
@@ -806,6 +810,8 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 			</dict>

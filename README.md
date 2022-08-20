@@ -19,9 +19,9 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - M.2 Drive: ADATA XPG SX8200 Pro 2TB
 - HDD: Western Digital Black 4TB
 - SSD: Intel SSD 480GB + Samsung 840 Pro 512GB (RAID1 1TB)
-- CPU Cooler: Corsair iCUE H100i RGB PRO XT (replaced fans with 2 X Noctua NF-F12 PWM Chromax Black, much quieter now)
+- CPU Cooler: Corsair iCUE H100i RGB PRO XT (replaced fans with 2 X Noctua NF-F12 PWM Chromax Black, much more quiet now)
 - Case fan: Noctua NF-S12A PWM Chromax Black
-- Chassis: Sliger SM570
+- Chassis: Sliger SM570 (13.83 L)
 - PSU: Corsair SF750, 750 Watt Platinum 80+
 
 ***
@@ -29,8 +29,8 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 ## Software
 
 - BIOS: 3004
-- Boot loader: Opencore 0.8.1
-- Operating system: macOS Monterey 12.4
+- Boot loader: Opencore 0.8.3
+- Operating system: macOS Monterey 12.5.1
 
 ### Tools
 
