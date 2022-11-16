@@ -1,9 +1,9 @@
 # macDesk
 SFF Hackintosh, used as my main workstation at home. Assembled in Oct/2020. Always evolving.... A work in progress...
 
-Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#getting-started-with-opencore
+Guide used: https://dortania.github.io/OpenCore-Install-Guide
 
-![About macDesk](Pics/macDesk.png)
+![About macDesk](Pics/macDesk.png "About macDesk")
 
 ***
 
@@ -28,13 +28,14 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 ## Software
 
-- BIOS: 3004
-- Boot loader: Opencore 0.8.3
-- Operating system: macOS Monterey 12.5.1
+- BIOS: 3006
+- Boot loader: Opencore 0.8.6
+- Operating system: macOS Ventura 13.0.1
 
 ### Tools
 
 - MountEFI: https://github.com/corpnewt/MountEFI
+- SSDTTime: https://github.com/corpnewt/SSDTTime
 - ProperTree: https://github.com/corpnewt/ProperTree
 - USBMap: https://github.com/corpnewt/USBMap
 - GenSMBIOS: https://github.com/corpnewt/GenSMBIOS
@@ -58,11 +59,12 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 ## ACPI
 
 - SSDT-AWAC.aml
-- SSDT-EC-USBX.aml
+- SSDT-EC.aml
+- SSDT-HPET.aml
 - SSDT-PLUG.aml
 - SSDT-PMC.aml
-- SSDT-SBUS-MCHC.aml
-- SSDT-UIAC.aml
+- SSDT-USBX.aml
+- SSDT-XOSI.aml
 
 ***
 
@@ -75,7 +77,6 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 - IntelMausi.kext
 - SMCProcessor.kext
 - SMCSuperIO.kext
-- USBInjectAll.kext (only to generate USBPorts.kext)
 
 ### System specific
 
@@ -85,7 +86,7 @@ Guide used: https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 Selected XHC ports:
 
-| **Name** | **Port** | **Connector** | **Comment** |
+| **Name** | **Port** | **Connector** | **Description** |
 | :---: | :---: | :--- | :--- |
 | HS05 | 0x05 | 0: USB2 | Back - Left - #1 (black) - USB2 only |
 | HS06 | 0x06 | 0: USB2 | Back - Left - #2 (black) - USB2 only |
@@ -105,7 +106,7 @@ Selected XHC ports:
 
 ### About VGTab
 
-This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video card parameters to your preference (voltage, clock speed, etc.). I use it to undervolt and overclock my Vega 56 card. It generates a VGTab.kext in your desktop which is used by VGTabMerge to copy those parameters to your config.plist. The merge tool, which was made with CLOVER in mind, will inject the parameters to the subtree relevant to Clover. You must then move them to the appropriate subtree for Opencore. You have to move the "Devices->Properties->PciRoot(...)" child to "Device->Properties->Add" Dictionary. The remaining "Devices" subtree can then be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
+This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video card parameters to your preference (voltage, clock speed, etc.). I use it to undervolt and overclock my gpu. It generates a VGTab.kext in your desktop which is then used by VGTabMerge to copy those parameters to your config.plist. The merge tool, which was made with CLOVER in mind, will inject the parameters to a subtree relevant to Clover. You must then move them to the appropriate subtree for Opencore, i.e.: you have to move the "Devices->Properties->PciRoot(...)" child to "Device->Properties->Add" Dictionary. The remaining "Devices" subtree can then be deleted. This can be seen in the following two screen shots (the entry is highlighted in light blue):
 
 **From here:**
 
@@ -136,7 +137,7 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video c
 	- Text Message Forwarding
 	- Universal Clipboard
 	- Untested but should work just fine:
-		- Apple Pay (N/A)
+		- Apple Pay
 		- Auto Unlock (don't have an Apple Watch)
 		- Sidecar (my iPad is too old)
 
@@ -144,7 +145,7 @@ This nice little tool creates a "SoftPowerPlayTable" that sets your Vega video c
 
 ## To do
 
-- Sleep: Wakes inmediately after sleep. This happens when the usb port in which the liquid cooler is connected is mapped in USBPorts.kext. If I remove the port mapping then sleep/wake works as expected. This is a problem because I use "liquidctl" to configure the fan speed curve and I need the port active. The machine does the ocassional bittorrent, so I can live with it being always awake. Any other solution will be considered.
+- Sleep: Wakes inmediately after sleep. This happens because the usb port in which the liquid cooler is connected is mapped in USBPorts.kext. If I remove the port mapping then sleep/wake works as expected. This is a problem because I use "liquidctl" to configure the fans speed curve and I need the port active. The machine does the ocassional bittorrent, anyway. I can live with it being always awake. Any other solution will be considered.
 
 ***
 
